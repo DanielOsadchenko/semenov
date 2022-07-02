@@ -1,21 +1,121 @@
 .header {
     width: 100%;
-    background-color: #2F343A;
+    background-color: $bg-color;
+    position: relative;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .logo {
-    width: 150px;
+    width: fit-content;
+    height: 50px;
 }
 
-.navigation {}
+.navigation {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
 
-.navigation__map-link {}
+.navigation__map-link {
+}
 
-.link {}
-
-.navigation__map-icon {}
+.navigation__map-icon {
+    fill: $accent-color;
+}
 
 .navigation__list {}
 
-.list {}
-
 .navigation__link {}
+
+
+
+.mobile-menu__button {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+
+
+}
+.mobile-menu__menu-icon {
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+    &:hover {
+        fill: $accent-color;
+    }
+}
+.menu {
+    visibility: visible;
+    opacity: 1;
+    .mobile-menu__button.is-open > & {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.cross {
+    visibility: hidden;
+    opacity: 0;
+    .mobile-menu__button.is-open > & {
+            visibility: visible;
+            opacity: 1;
+        }
+}
+.mobile-menu {
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 60;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: $bg-color;
+    padding: 30px 10px;
+
+    &.is-open {
+    visibility: visible;
+    opacity: 1;
+
+    }
+}
+
+.mobile-menu__map-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+}
+
+.mobile-menu__map-icon {
+    vertical-align: middle;
+    fill: $accent-color;
+    margin-right: 10px;
+}
+
+.navigation__list {
+    text-align: center;
+}
+
+.mobile-menu__item {
+    margin-top: 10px;
+}
+
+.mobile-menu__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
