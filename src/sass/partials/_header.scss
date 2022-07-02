@@ -78,6 +78,7 @@
     height: auto;
     background-color: $bg-color;
     padding: 30px 10px;
+    z-index: 10;
 
     &.is-open {
     visibility: visible;
