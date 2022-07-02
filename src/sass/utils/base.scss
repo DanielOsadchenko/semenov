@@ -1,5 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
-    font-family: montserat, sans-serif;
+    font-family: "montserat", sans-serif;
 }
 .container{
     width: 100%;
@@ -9,8 +12,8 @@ body {
     margin-right: auto;
     
     @include mobile-s {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     @include mobile {
@@ -19,13 +22,13 @@ body {
     
     @include tablet {
         max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     @include desktop {
         max-width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
