@@ -2,7 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "montserat", sans-serif;
+    font-family: "montserrat", sans-serif;
+}
+a {
+    font-family: "montserrat", sans-serif;
 }
 .container{
     width: 100%;
@@ -27,7 +30,7 @@ body {
     }
     
     @include desktop {
-        max-width: 1280px;
+        max-width: 1200px;
         padding-left: 20px;
         padding-right: 20px;
     }
