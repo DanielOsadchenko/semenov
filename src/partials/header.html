@@ -1,17 +1,34 @@
 <header class="header">
-    <div class="container">
+    <div class="container header-container">
         <img src="./images/logo.png" alt="BMW E60" class="logo">
-        <nav class="navigation">
-            <a href="#map" class="navigation__map-link link"><svg class="navigation__map-icon" weight="25" height="25"
-                    color="black">
-                    <use href="./images/map.svg"></use>
+        <button type="button" class="mobile-menu__button" data-menu-button><svg class="mobile-menu__menu-icon">
+                <use href="./images/icons.svg#menu" class="menu"></use>
+                <use href="./images/icons.svg#cross" class="cross"></use>
+            </svg></button>
+        <div class="mobile-menu" data-menu>
+            <a href="#map" class="mobile-menu__map-link link">
+                <svg class="mobile-menu__map-icon" width="25" height="25">
+                    <use href="./images/icons.svg#map-pin"></use>
                 </svg>Де ми знаходимось</a>
             <ul class="navigation__list list">
-                <li class="navigation__list"><a href="" class="navigation__link link">Хімчистка авто</a></li>
-                <li class="navigation__list"><a href="" class="navigation__link link">Хімчистка килимів</a></li>
-                <li class="navigation__list"><a href="" class="navigation__link link">Хімчистка меблів</a></li>
-                <li class="navigation__list"><a href="" class="navigation__link link">Контакти</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Хімчистка авто</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Хімчистка килимів</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Хімчистка меблів</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
             </ul>
-        </nav>
+            <nav class="navigation">
+                <a href="#map" class="navigation__map-link link"><svg class="navigation__map-icon" width="25"
+                        height="25">
+                        <use href="./images/icons.svg#map-pin"></use>
+                    </svg>Де ми знаходимось</a>
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a href="" class="navigation__link link">Хімчистка авто</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link link">Хімчистка килимів</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link link">Хімчистка меблів</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link link">Контакти</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </div>
 </header>
