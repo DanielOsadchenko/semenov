@@ -1,2 +1,12 @@
-@import './common';
-@import './example';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/base.scss';
+@import './utils/visually-hidden';
+@import './utils/style-rst';
+
+@import './partials/header';
+@import './partials/hero';
+@import './partials/products';
+@import './partials/contacts';
+@import './partials/map';
+@import './partials/footer';
