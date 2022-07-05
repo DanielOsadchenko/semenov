@@ -1,3 +1,4 @@
+
 .header-border {
     border-bottom: 1px solid #ececec;
     z-index: 1;
@@ -73,30 +74,9 @@
     @include tablet {
         padding-top: 32px;
         padding-bottom: 32px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.14;
     }
-}
-
-.nav-list__link--active {
-    position: relative;
-    color: $accent-color;
-
-    @include tablet {
-        &::after {
-            position: absolute;
-            bottom: 0;
-
-            content: '';
-            display: block;
-            width: 100%;
-            height: 4px;
-
-            background-color: $accent-color;
-            border-radius: 2px;
-        }
-    }
-
 }
 
 .nav-list__item {
@@ -167,18 +147,24 @@
 
     @media (max-width:767px) {
         position: absolute;
+        display: none;
         top: 0;
         left: 0;
         padding: 48px 40px;
-        display: none;
         z-index: 10;
         background-color: $bg-color;
+        // visibility: hidden;
+        // opacity: 0;
+        // transform: translateY(-100%);
 
         &.is-open {
             display: flex;
             position: fixed;
             height: 100vh;
             flex-direction: column;
+            // transform: translateY(0);
+            // visibility: visible;
+            // opacity: 1;
         }
     }
 
