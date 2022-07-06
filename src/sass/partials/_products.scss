@@ -1,0 +1,95 @@
+
+.section{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3%);
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+.card{
+    padding: 15px;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(136deg, rgba(0, 0, 0, 0.65) 12.9%, rgba(0, 0, 0, 1) 145.4%);
+
+    @media screen and (max-width: 767px){
+        margin-bottom: 20px;
+        
+            &:last-child {
+                margin-bottom: 0;
+            }
+    }
+
+    @include tablet {
+       
+    }
+}
+.card__img{
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.card__lable{
+    margin-bottom: 15px;
+
+    letter-spacing: .04em;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+
+    @include tablet {
+        font-size: 20px;
+    }
+
+    color: #c8a35f;
+    text-shadow: 1px 1px #000;
+
+}
+.card__title{
+    text-align: end;
+    color: #907e82;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+
+    color: #c8a35f;
+    text-shadow: 1px 1px #000;
+
+    @include tablet {
+            font-size: 14px;
+        }
+}
+.card__price{
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #c8a35f;
+    text-shadow: 1px 1px #000;
+
+    @include tablet {
+            font-size: 20px;
+        }
+}
+
+.mobile-card{
+    display: block;
+    @include tablet{
+        display: none;
+    }
+}
+.tablet-decktop-card{
+    display: block;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
