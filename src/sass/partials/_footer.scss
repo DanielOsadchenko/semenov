@@ -1,0 +1,93 @@
+.footer-container {
+background-color: #2f343a;
+border-bottom: 1px solid #ececec;
+padding: 40px 10px;
+text-align: center;
+}
+.footer {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+.footer__logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $accent-color;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 40px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+
+}
+
+.footer-contact__link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: $white-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+.footer-contact__item {
+    & + & {
+        margin-top: 10px;
+    }
+}
+
+
+.connect {
+    margin-top: 40px;
+
+    @include tablet {
+        margin-top: 0;
+    }
+
+}
+
+.connect__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.connect__list {
+    display: flex;
+    justify-content: center;
+}
+
+.connect__icon {
+    width: 20px;
+    height: 20px;
+    fill: $white-color;
+}
+
+.connect__title {
+    text-align: center;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.connect__item+.connect__item {
+    margin-left: 10px;
+}
