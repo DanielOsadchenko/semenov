@@ -45,6 +45,8 @@
     align-items: center;
 }
 .hero__title{
+    line-height: 1.86;
+    letter-spacing: .04em;
     text-align: center;
     font-size: 25px;
     color: #fff;
@@ -60,6 +62,7 @@
     }
 }
 .hero__link{
+        text-decoration: none;
         font-family: inherit;
         cursor: pointer;
         background-color: #fff;
