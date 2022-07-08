@@ -28,6 +28,9 @@
 }
 .hero{
     position: relative;
+    @media screen and (max-width: 767px){
+        padding-top: 60px;
+    }
 
 }
 .title__container{
@@ -50,6 +53,7 @@
     text-align: center;
     font-size: 25px;
     color: #fff;
+    margin-top: 30px;
     margin-bottom: 20px;
     @include mobile{
         font-size: 35px;

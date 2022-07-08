@@ -39,6 +39,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 0;
 
     @include tablet {
@@ -103,9 +104,9 @@
 
 .mobile-menu__button {
     display: inline-flex;
-    position: fixed;
-    right: 15px;
-    margin-left: auto;
+    // position: fixed;
+    // right: 15px;
+    margin-left: 0;
     padding: 0;
     border: none;
     background-color: transparent;
