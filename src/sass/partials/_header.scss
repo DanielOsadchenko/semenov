@@ -3,7 +3,13 @@
     border-bottom: 1px solid #ececec;
     z-index: 1;
     background-color: $bg-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    width: 100%;
 }
+
 
 // Логотип
 .logo {
