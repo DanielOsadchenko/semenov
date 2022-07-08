@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="./sass/index.scss" />
   <script type="module" src="./index.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
 </head>
@@ -28,9 +27,6 @@
   <include src="./partials/contacts.html"></include>
   <include src="./partials/map.html"></include>
   <include src="./partials/footer.html"></include>
-  <div id="toTop"><svg class="totop">
-      <use href="./images/icons.svg#arrow-top"></use>
-    </svg></div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script>
@@ -45,20 +41,7 @@
       },
     });
   </script>
-  <script type="text/javascript">
-    $(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() != 0) {
-          $('#toTop').fadeIn();
-        } else {
-          $('#toTop').fadeOut();
-        }
-      });
-      $('#toTop').click(function () {
-        $('body,html').animate({ scrollTop: 0 }, 800);
-      });
-    });
-  </script>
+
 </body>
 
 </html>

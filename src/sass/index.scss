@@ -10,31 +10,3 @@
 @import './partials/contacts';
 @import './partials/map';
 @import './partials/footer';
-#toTop {
-    width: 40px;
-    height: 40px;
-    border: 1px solid $accent-color;
-    border-radius: 50%;
-    background: transparent;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 10px;
-    /* отступ кнопки от нижнего края страницы*/
-    right: 10px;
-    cursor: pointer;
-    display: none;
-    transition: 400ms;
-    &:hover, &:focus {
-        transform: scale(1.2);
-    }
-
-}
-.totop {
-    width: 30px;
-    height: 30px;
-    fill: #d32f2f;
-}
