@@ -1,4 +1,97 @@
+.map {
+    border-top: 3px solid #ececec;
+    border-bottom: 3px solid #ececec;
+}
 .map_frame {
     margin-left: auto;
     margin-right: auto;
+    display: block;
+}
+.discount {
+    background-color: $accent-color;
+}
+.discount-list {
+
+    justify-content: center;
+    padding: 30px 0;
+    @include tablet {
+        display: flex;
+    }
+}
+
+.discount__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+    & + & {
+        margin-top: 30px;
+    }
+    @include tablet {
+        & + & {
+        margin-left: 50px;
+        margin-top: 0;
+    }
+    }
+    
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+}
+.front {
+    position: relative;
+    background-color: #2f343a;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.back {
+    background-color: #2f343a;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: rotateY(180deg);
+}
+.discount__item:hover .front {
+    transform: rotateY(180deg);
+}
+
+.discount__item:hover .back {
+    transform: rotateY(360deg);
+}
+.discount__title {
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+        letter-spacing: .04em;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.86;
+        color: #F5F5F5;
+}
+
+.discount__ammount {
+    text-align: center;
+        font-family: "montserrat", sans-serif;
+            color: #907e82;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #D32F2F;
+        
+            @include tablet {
+                font-size: 40px;
+            }
+}
+.arrow {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
