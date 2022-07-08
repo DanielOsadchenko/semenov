@@ -189,9 +189,9 @@
         margin-left: 30px;
     }
 
-    @include desktop {
-        flex-direction: row;
-    }
+    // @include desktop {
+    //     flex-direction: row;
+    // }
 }
 
 @media (max-width:767px) {
