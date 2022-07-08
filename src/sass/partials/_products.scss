@@ -9,8 +9,9 @@
     }
 }
 .card{
+
     max-width: 400px;
-    padding: 15px;
+    // padding: 15px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -28,10 +29,15 @@
        
     }
 }
+.card__block {
+    padding: 15px;
+}
 .card__img{
+    display: block;
     width: 100%;
     border: 0px solid transparent;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     margin-bottom: 15px;
 }
 .card__lable{
